@@ -1,0 +1,71 @@
+body {
+    font-family: sans-serif;
+    margin: 0;
+    background-color: #f4f4f9;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    background-color: #007bff;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+main {
+    display: flex;
+    padding: 20px;
+    flex-grow: 1;
+}
+
+.artist-list-container {
+    width: 250px;
+    padding: 15px;
+    border-right: 1px solid #ccc;
+    background-color: #fff;
+    box-shadow: 2px 0 5px rgba(0,0,0,0.1);
+}
+
+#artist-list {
+    list-style: none;
+    padding: 0;
+}
+
+#artist-list button {
+    background: none;
+    border: none;
+    padding: 10px 0;
+    width: 100%;
+    text-align: left;
+    cursor: pointer;
+    font-size: 16px;
+    color: #007bff;
+    transition: background-color 0.2s;
+}
+
+#artist-list button:hover {
+    background-color: #e9ecef;
+}
+
+.artist-details-container {
+    flex-grow: 1;
+    padding: 20px;
+}
+
+#artwork-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.gallery img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    object-fit: cover; /* ပုံအချိုးအစား မပျက်အောင် */
+}
